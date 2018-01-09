@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
-import Fight from '../components/fightLogic/fightLogic.js'
+import FightContainer from '../components/FightContainer/FightContainer.js'
 
 class App extends Component {
   render() {
@@ -12,7 +12,7 @@ class App extends Component {
           <h1 className="App-title">Welcome to my Fighting Game</h1>
         </header>
         <p className="App-intro">This game is blah blah blah</p>
-        <Fight />
+        <FightContainer />
       </div>
     );
   }
