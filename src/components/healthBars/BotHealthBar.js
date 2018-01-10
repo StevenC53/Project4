@@ -1,22 +1,32 @@
-import React, { Component } from 'react';
+import React from 'react';
 
-class BotHealthBar extends Component {
-
-  constructor(props) {
-    super(props)
-    this.state = {
-
+  const BotHealthBar = ({width}) => {
+    const BotHealthBarWidth = () => {
+      return width * 2
     }
-  }
-  render () {
+    const BotHealthBarBox = {
+      display: 'inline-flex',
+      justifyContent: 'flex-start',
+      maxWidth: '200px',
+      width: '200px',
+      height: '30px',
+      border: '2px solid black',
+      borderColor: 'black',
+      padding: '20px,1000px'
+    }
+    const BotHealthBarStyle = {
+      height: '30px',
+      width: BotHealthBarWidth(),
+      background: 'red'
+    }
     return (
       <div>
-        <div className='BotHealthBarBox'>
-          <div className='BotHealthBar'>
+        <div style={BotHealthBarBox}>
+          <div style={BotHealthBarStyle}>
           </div>
         </div>
       </div>
     )
   }
-}
+
 export default BotHealthBar

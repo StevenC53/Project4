@@ -2,15 +2,6 @@ import React, { Component } from 'react';
 
 class PlayerFightOptions extends Component {
 
-  constructor(props) {
-    super(props)
-    this.state= {
-
-    }
-    // this. = this. .bind(this)
-  }
-
-
   render() {
     return(
       <div>

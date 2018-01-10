@@ -1,16 +1,4 @@
-.HealthBarBox {
-  display: inline-flex;
-  justify-content: flex-start;
-  max-width: 200px;
-  width: 200px;
-  height: 30px;
-  border: 2px solid black;
-  border-color: black;
-  padding: 20px,1000px;
-}
-.HealthBar {
-  height: 30px;
-  width: 200px;
-  /*    width: fightLogic.state.playerHealth*2     */
-  background: red;
+.flexImages {
+  display: flex;
+  justify-content: space-around;
 }

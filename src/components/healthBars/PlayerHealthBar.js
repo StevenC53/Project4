@@ -1,23 +1,33 @@
-import React, { Component } from 'react';
+import React from 'react';
 import './HealthBar.css'
 
-class PlayerHealthBar extends Component {
-
-  constructor(props) {
-    super(props)
-    this.state = {
-
+  const PlayerHealthBar = ({width}) => {
+    const PlayerHealthBarWidth = () => {
+      return width * 2
     }
-  }
-  render() {
-    return(
+    const PlayerHealthBarBox = {
+      display: 'inline-flex',
+      justifyContent: 'flex-start',
+      maxWidth: '200px',
+      width: '200px',
+      height: '30px',
+      border: '2px solid black',
+      borderColor: 'black',
+      padding: '20px,1000px'
+    }
+    const PlayerHealthBarStyle = {
+      height: '30px',
+      width: PlayerHealthBarWidth(),
+      background: 'red'
+    }
+    return (
       <div>
-        <div className='HealthBarBox'>
-          <div className='HealthBar'>
+        <div style={PlayerHealthBarBox}>
+          <div style={PlayerHealthBarStyle}>
           </div>
         </div>
       </div>
     )
   }
-}
+
 export default PlayerHealthBar

@@ -28,15 +28,14 @@ class FightContainer extends Component {
     })
   }
 
-  
+
 
   render() {
     return (
       <div>
-      <Fight />
       {
         this.state.hasName?
-        <p className="characterName"> {this.state.name} </p>:
+        <Fight name={this.state.name}/>:
         <Creation onSubmitQuery={this.onSubmitQuery} handleNameInput={this.handleNameInput}/>
       }
       </div>
