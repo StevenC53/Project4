@@ -8,7 +8,7 @@ class Fight extends Component {
     this.state = {
       playerHealth: 100,
       botHealth: 100,
-      turnCounter: 2
+      turnCounter: 0
     }
     this.whoseTurn = this.whoseTurn.bind(this)
     this.botAndPlayerAttack = this.botAndPlayerAttack.bind(this)
@@ -38,6 +38,7 @@ class Fight extends Component {
       this.whoseTurn()?
          this.setState({botHealth: currentBotHealth - damage}):
          this.botAttack()
+      this.setState({turnCounter: this.state.turnCounter + 1})
        }
 
     render() {
