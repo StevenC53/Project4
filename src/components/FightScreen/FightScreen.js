@@ -18,11 +18,12 @@ class FightScreen extends Component {
           <div className="fightImages">
             <div className="flexImages">
               <div className="player">
+                <p className="characterName">{this.props.name} </p>
                 <PlayerHealthBar width={this.props.playerHealth}/>
                 <img src={image} alt="Your character" />
-                <p className="characterName">{this.props.name} </p>
               </div>
               <div className="bot">
+                <p className="botName">Evil bot Billy Bob</p>
                 <BotHealthBar width = {this.props.botHealth}/>
                 <img src={botImage} alt="Bot's Character" />
               </div>

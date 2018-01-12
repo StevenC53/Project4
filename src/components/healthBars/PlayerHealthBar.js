@@ -16,7 +16,7 @@ import './HealthBar.css'
       padding: '20px,1000px'
     }
     const PlayerHealthBarStyle = {
-      height: '30px',
+      height: '26px',
       width: PlayerHealthBarWidth(),
       background: 'red'
     }

@@ -153,13 +153,13 @@ class Fight extends Component {
 
           }
           {
-            this.state.stageCounter!=4 && !this.state.botWin?
+            this.state.stageCounter!==4 && !this.state.botWin?
             <p>You have {this.state.potionCounter} potion(s).  Each one will heal you for 50 health</p>:
             <p></p>
 
           }
           {
-            this.state.turnCounter!=0 && this.state.stageCounter!=4 && !this.state.botWin?
+            this.state.turnCounter!==0 && this.state.stageCounter!==4 && !this.state.botWin?
               <div>
                 <BotDamageDisplay botHit={this.state.botHit} playerHealth={this.state.playerHealth} currentBotAttack={this.state.currentBotAttack}/>
                 <PlayerDamageDisplay currentPlayerAttack={this.state.currentPlayerAttack} botHealth={this.state.botHealth}/>

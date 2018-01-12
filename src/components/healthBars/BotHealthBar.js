@@ -15,7 +15,7 @@ import React from 'react';
       padding: '20px,1000px'
     }
     const BotHealthBarStyle = {
-      height: '30px',
+      height: '26px',
       width: BotHealthBarWidth(),
       background: 'red'
     }

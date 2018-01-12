@@ -4,7 +4,7 @@ class Creation extends Component {
 
   render(){
     return (
-      <div>
+      <div className='characterNameInput'>
         <form onSubmit={this.props.onSubmitQuery}>
           <input type='text' placeholder='Enter a name' onChange={this.props.handleNameInput} />
           <input type='submit' value='Submit' />
