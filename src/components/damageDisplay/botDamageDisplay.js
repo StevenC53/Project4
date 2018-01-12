@@ -6,8 +6,8 @@ class BotDamageDisplay extends Component {
       <div>
       {
         this.props.botHit?
-        <div><p>You got hit for {this.props.currentBotAttack} damage.  You have {this.props.playerHealth} health.</p></div>:
-        <div><p>The enemy misses you with its attack.  You have {this.props.playerHealth} health.</p></div>
+        <div><p className='botHits'>You got hit for {this.props.currentBotAttack} damage.  You have {this.props.playerHealth} health.</p></div>:
+        <div><p className='botMiss'>The enemy misses you with its attack.  You have {this.props.playerHealth} health.</p></div>
       }
       </div>
     )

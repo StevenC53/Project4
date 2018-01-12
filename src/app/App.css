@@ -1,11 +1,36 @@
 .App {
   text-align: center;
+  color: white;
+}
+.potions {
+  font-size: 20px;
 }
 
-.App-header {
-  background-color: white;
-  height: 150px;
-  color: black;
+HTML {
+  background-image: url('../components/img/the-background.jpg');
+  background-size: cover;
+}
+
+.botHits {
+  font-size: 20px;
+}
+
+.botMiss {
+  font-size: 20px;
+}
+
+.playerDamage {
+  font-size: 20px;
+}
+
+.characterName {
+  font-size: 20px;
+  margin: 0;
+}
+
+.botName {
+  font-size: 20px;
+  margin: 0;
 }
 
 .characterNameInput {

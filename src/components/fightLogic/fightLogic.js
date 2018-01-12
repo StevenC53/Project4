@@ -131,13 +131,13 @@ class Fight extends Component {
       this.setState({botHealth: currentBotHealth - damage})
       console.log(damage)
       return (
-        <p className='PlayerDamage'> You dealt {damage} damage to the enemy</p>
+        <p className='playerDamage'> You dealt {damage} damage to the enemy</p>
       )
     }
 
     render() {
       return (
-        <div className="fight">
+        <div className='fight'>
           {
             this.state.stageCounter >= 4 || this.state.botWin?
               <EndGameScreen botWin={this.state.botWin} stageCounter={this.state.stageCounter}/>:
@@ -154,7 +154,7 @@ class Fight extends Component {
           }
           {
             this.state.stageCounter!==4 && !this.state.botWin?
-            <p>You have {this.state.potionCounter} potion(s).  Each one will heal you for 50 health</p>:
+            <p className='potions'>You have {this.state.potionCounter} potion(s).  Each one will heal you for 50 health</p>:
             <p></p>
 
           }

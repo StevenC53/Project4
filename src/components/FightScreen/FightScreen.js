@@ -13,7 +13,7 @@ class FightScreen extends Component {
       <div>
         <div className="fightScreen">
           <div>
-            <h3>You are currently on stage {this.props.stageCounter + 1}</h3>
+            <h3>Stage {this.props.stageCounter + 1}</h3>
           </div>
           <div className="fightImages">
             <div className="flexImages">
