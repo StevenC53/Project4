@@ -4,7 +4,7 @@ class PlayerWin extends Component {
   render() {
     return(
       <div className='PlayerVictory'>
-        <h3>Congratulations you have won!!!!</h3>
+        <h3>Congratulations you have cleared all {this.props.stageCounter} stages!!!!</h3>
       </div>
     )
   }

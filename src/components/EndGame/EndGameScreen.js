@@ -7,9 +7,9 @@ class EndGameScreen extends Component {
     return (
       <div>
       {
-        this.props.playerWin?
-          <PlayerWin />:
-          <BotWin />
+        this.props.stageCounter >=4 ?
+          <PlayerWin stageCounter={this.props.stageCounter}/>:
+          <BotWin stageCounter={this.props.stageCounter}/>
       }
       </div>
     )

@@ -8,18 +8,13 @@ import BotAttackLogic from '../BotAttackLogic/BotAttackLogic.js'
 
 class FightScreen extends Component {
 
-  constructor(props) {
-    super(props)
-    this.state = {
-
-    }
-    // this. = this. .bind(this)
-  }
-
   render() {
     return (
       <div>
         <div className="fightScreen">
+          <div>
+            <h3>You are currently on stage {this.props.stageCounter + 1}</h3>
+          </div>
           <div className="fightImages">
             <div className="flexImages">
               <div className="player">
@@ -36,7 +31,7 @@ class FightScreen extends Component {
         </div>
         {
           this.props.whoseTurn()?
-          <PlayerFightOptions botAndPlayerAttack={this.props.botAndPlayerAttack}/>:
+          <PlayerFightOptions botAndPlayerAttack={this.props.botAndPlayerAttack} checkForPotion={this.props.checkForPotion}/>:
           <BotAttackLogic botAndPlayerAttack={this.props.botAndPlayerAttack}/>
         }
       </div>
